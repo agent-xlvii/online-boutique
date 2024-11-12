@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: octopus-sa-token
+  namespace: octopus-agent
+  annotations:
+    kubernetes.io/service-account.name: "octopus-sa"
+type: kubernetes.io/service-account-token
